@@ -9,6 +9,7 @@ import Slide from "material-auto-rotating-carousel/lib/Slide";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Swiper from "swiper";
 import Carousel from "./Components/Slider";
+import { Zoom } from "react-reveal";
 const { red, blue, green } = require("@material-ui/core/colors");
 
 // style={{backgroundImage: "{wave}"}}
@@ -23,9 +24,11 @@ const Home = () => {
           <p style={{ fontFamily: "Montserrat" }}>
             <b>
               <i>
+                <Zoom >
                 "It is a good rule after reading a new book, never to allow
                 yourself another new one till you have read an old one in
                 between."
+                </Zoom>
               </i>
             </b>
           </p>
@@ -107,65 +110,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div
-        id="carouselExampleDark"
-        class="carousel carousel-dark slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          <div
-            className="carousel-item active"
-            data-bs-interval="100000"
-            height="400"
-            width="200"
-          >
-            <img src="./carroul1.jpg" className="d-block w-100 " alt="..." />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div
-            className="carousel-item"
-            data-bs-interval="1000"
-            height="400"
-            width="200"
-          >
-            <img src="./caryoul2.jpg" className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div
-            className="carousel-item"
-            data-bs-interval="1000"
-            height="400"
-            width="200"
-          >
-            <img src="carryoul3.jpg" className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div> */}
+      
 
       <div className="carousel" style={{height : "30vh"}}>
         <Carousel/>
@@ -174,15 +119,7 @@ const Home = () => {
 
       
  <br />
- {/* <small>
-   <a 
-    href="https://maps.google.com/maps?q=10.305385,77.923029&hl=es;z=14&amp;output=embed" 
-    style={{color:"#0000FF",textAlign:"left"}}
-    target="_blank"
-   >
-     See map bigger
-   </a>
- </small> */}
+ 
 
 
       <div class="reviews">
@@ -190,10 +127,11 @@ const Home = () => {
         <div class="our_cards">
           <div class="card-div">
             <div class="card">
-              <div class="card-body">
-                <p class="card-text">
+            <p class="card-text">
                   "There is a unique idea present in this Bookold yhat is the exchange of book without money using cerdit system."<br/>-H.G.Wells
                 </p>
+              <div class="card-body">
+                
                 <br></br>
               </div>
             </div>

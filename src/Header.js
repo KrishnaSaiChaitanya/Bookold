@@ -8,6 +8,7 @@ import SwipeableTemporaryDrawer from "./SwipeableTemporaryDrawer";
 import { height } from "@mui/system";
 import KeepMountedModal from "./Cart";
 import Link from "@mui/material/Link";
+import SimpleBackdrop from "./Components/SimpleBackdrop";
 
 export default function Header(props) {
   const [token, settoken] = useState("");
@@ -63,7 +64,8 @@ export default function Header(props) {
           )}
         </div>
         <div className="cart m" id="link1">
-          <KeepMountedModal />
+          {/* <KeepMountedModal /> */}
+          <SimpleBackdrop/>
         </div>
       </div>
     </nav>
