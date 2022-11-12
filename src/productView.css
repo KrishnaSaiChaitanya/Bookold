@@ -1,0 +1,18 @@
+.img3>img{
+    height: 60vh;
+    width: 30vw;
+    margin-top: 7vh;
+    margin-left: 80px;
+}
+.information1{
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    padding: 80px;
+    margin-left: 10vw;
+    width: 45vw;
+    margin-top: 2vh;
+    border-radius: 80px;
+}
+.main_div{
+    display: flex;
+    
+}

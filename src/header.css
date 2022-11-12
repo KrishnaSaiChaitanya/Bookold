@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+.nav_bar {
+  list-style: none;
+  position: sticky;
+  top: 0;
+  /* background-color: aliceblue;*/
+  background-color: white;
+  z-index: 2;
+  /* height: 250px; */
+}
+
+.list {
+  /* box-shadow: 3px 2px 2px 0; */
+  /* box-shadow: 5px 5px 60px #ffd089, -5px -5px 60px #ffd089; */
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #ffd089;
+  /* margin: 2vh; */
+  list-style: none;
+  height: 12vh;
+  /* border-radius: 80px; */
+}
+.link {
+  padding: 3.5vh;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 3vw;
+}
+.link1 {
+  padding: 3.5vh;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-right: 3vw;
+}
+.link1 > a {
+  color: #a52a5a;
+}
+#link1 {
+  color: #a52a5a;
+  margin-left: 40px;
+}
+
+.link > a {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(11, 11, 10);
+  background-color: bisque;
+}
+.name {
+  display: flex;
+  height: 150px;
+}
+
+#logo {
+  height: 100px;
+}
+.drawer {
+  padding-right: 20px;
+  margin-top: 34px;
+  margin-left: 6vw;
+}
+#p_name {
+  font-size: 4.3rem;
+  font-weight: 900;
+  margin-left: 4.1rem;
+  margin-top: 30px;
+  font-family: "Square Peg", cursive;
+  text-transform: uppercase;
+}
+
+.m {
+  margin-top: 3.3vh;
+}
+
+@media screen and (max-width: 600px) {
+  .link1 {
+    display: none;
+  }
+  #p_name {
+    margin-left: 6vw;
+  }
+  #logo {
+    margin-left: 1rem;
+    height: 10px;
+    width: 50px;
+  }
+  .drawer {
+    margin-top: 25px;
+    margin-right: 40vw;
+    margin-left: 2vw;
+    display: flex;
+  }
+}

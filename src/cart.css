@@ -1,0 +1,21 @@
+.image>img{
+    height: 250px;
+    width: 160px;
+    
+}
+.image{
+    padding: 15px;
+}
+.cart{
+    display: flex;
+}
+.information{
+    padding: 10px;
+}
+.information>h5{
+  font-weight: 400;
+}
+#bttn{
+    margin-top: 30px;
+    margin-left: 50px;
+}

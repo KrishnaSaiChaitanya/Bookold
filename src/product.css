@@ -1,0 +1,142 @@
+.main_props{
+  
+  box-shadow: 3px 3px 2px rgb(83, 80, 80);
+  padding: 10px;
+  height: 75vh;
+  
+}
+.main_props:hover{
+    box-shadow: 8px 4px 2px rgb(83, 80, 80);
+    border-radius: 30px;
+    transform: scale(1.04);
+}
+.props_name{
+    font-size: large;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.props_p{
+    font-size: large;
+    text-align: center;
+}
+.button{
+    margin-right: 90px;
+}
+#sai{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    margin-left: 80px;
+}
+
+
+
+
+
+.MuiContainer-root.props-view {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 80px 0 100px 0;
+  }
+  
+  .props-view .image-wrapper img {
+    width: 100%;
+  }
+  
+  .props-view .text {
+    color: #000;
+  }
+  
+  .props-view .text h2 {
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .props-view .text h3 {color: #000;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  
+  .MuiContainer-root.props-view .custom-button {
+    color: white;
+    background-color: #1C2331;
+  }
+  
+  .MuiContainer-root.props-view .custom-button:hover {
+    color: white;
+    background-color: #2a344a;
+  }
+  
+  .MuiContainer-root.props-view .custom-button svg {
+    margin-right: 10px;
+  }
+  
+  
+  .props-view .MuiGrid-root .MuiGrid-item {
+    padding: 5px 15px;
+  }
+  
+  @media (min-width: 960px) {
+    .MuiContainer-root.props-view {
+      height: 88vh;
+      margin: 40px 0 0;
+    }
+  }
+
+  .ima{
+    height: 16vh;
+    width: 15vw;
+  }
+  .card1{
+    height: 62vh;
+    width: 20vw;
+    flex : 33%;
+    
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    padding: 20px;
+    transition: box-shadow 0.15s, transform 0.3s;
+  }
+  .card1:hover{
+    border: none;
+    cursor: pointer;
+    /* transform: translate(-3px, -3px); */
+    transform: scale(1.06);
+    /* box-shadow: 2px 1px 2px 1px black; */
+  }
+  .c-body{
+    background-color: antiquewhite;
+    height: 150px;
+    border-radius: 30%;
+    /* margin-left: 15vw; */
+   text-align: center;
+   padding-top: 10px;
+  }
+  .ima>img{
+    height: 37vh;
+  }
+  .ima{
+    height: 37vh;
+  }
+  #bottan{
+   margin-right: 30px;
+  }
+
+  @media screen and (max-width: 600px){
+    .card1{
+      width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 1330px){
+    .card1{
+      width: 300px;
+    }
+  }
+
+
+
+
+  
