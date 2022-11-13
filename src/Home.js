@@ -34,7 +34,8 @@ const Home = () => {
           </p>
         </div>
         <h1> Learn more about our website </h1>
-        <ArrowDownwardIcon style={{marginLeft:"48vw"}} Size="large"/>
+        {/* <ArrowDownwardIcon style={{marginLeft:"48vw"}} Size="large"/> */}
+       
         {/* <Button id="b" variant="outlined" href="./about">
           LEARN MORE
         </Button> */}
@@ -127,18 +128,18 @@ const Home = () => {
         <div class="our_cards">
           <div class="card-div">
             <div class="card">
-            <p class="card-text">
+            
+              <div class="card-body">
+              <p class="card-text">
                   "There is a unique idea present in this Bookold yhat is the exchange of book without money using cerdit system."<br/>-H.G.Wells
                 </p>
-              <div class="card-body">
-                
                 <br></br>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <p class="card-text">
-                  "Everybody can buy these books. This is Exchange platform with credit system. I like the system very much. It is diffent from others." <br/> -H.Raghava
+                  "Everybody can buy these books. This is Exchange platform with credit system. I like the system very much." <br/> -H.Raghava
                 </p>
               </div>
             </div>

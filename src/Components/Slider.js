@@ -15,7 +15,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 export default function Carousel() {
   return (
     <>
-      <Swiper style={{height: "30vh"}}
+      <Swiper style={{height: "40vh"}}
         cssMode={true}
         navigation={true}
         pagination={true}
@@ -24,15 +24,9 @@ export default function Carousel() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide> <img src="./carroul1.jpg" className="d-block w-100 " alt="..." /></SwiperSlide>
+        <SwiperSlide><img src="./caryoul2.jpg" className="d-block w-100" alt="..." /></SwiperSlide>
+        <SwiperSlide><img src="carryoul3.jpg" className="d-block w-100" alt="..." /></SwiperSlide>
       </Swiper>
     </>
   );

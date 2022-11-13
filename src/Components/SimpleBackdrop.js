@@ -28,7 +28,7 @@ export default function SimpleBackdrop() {
 
   return (
     <div>
-      <Button  onClick={handleOpen} fontSize="large" style={{colour : "#F3E6DD"}}  ><ShoppingCartIcon/></Button>
+      <Button  onClick={handleOpen} fontSize="large" style={{colour : "#A52A5A"}}  ><ShoppingCartIcon/></Button>
       <Backdrop
         sx={{ color: 'black', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
@@ -38,10 +38,10 @@ export default function SimpleBackdrop() {
           
   <div>
   <div>
-  <Button onClick={handleClose}  style = {{ borderRadius: "50%", height: "70px", width: "70px", justifyItems: "end"}}><CloseIcon fontSize="large"/></Button>
+  <Button onClick={handleClose}  style = {{ borderRadius: "50%", height: "70px", width: "70px", justifyItems: "end", colour : "#A52A5A"}}><CloseIcon fontSize="large"/></Button>
   </div>
-  {!playAnimation && <div style={{height: "50vh",width: "80vw",borderRadius: "100px", backgroundColor : "#282932"}}>
-    hello
+  {!playAnimation && <div style={{height: "50vh",width: "80vw",borderRadius: "100px", backgroundColor : "white",   display: "flex", justifyContent: "center"}}>
+  <img src= "/emptyCart.png" style={{height : "300px" , width: "350px", marginTop: "30px"}} alt=""/>
     </div>}
   </div>
   
