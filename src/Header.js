@@ -9,6 +9,7 @@ import { height } from "@mui/system";
 import KeepMountedModal from "./Cart";
 import Link from "@mui/material/Link";
 import SimpleBackdrop from "./Components/SimpleBackdrop";
+import { Grid } from "@mui/material";
 
 export default function Header(props) {
   const [token, settoken] = useState("");
@@ -35,22 +36,31 @@ export default function Header(props) {
         
         <h1 id="p_name">BOOKOLD</h1>
       </div> */}
-      <div class="list">
-        <div class="iimg" style={{ display: "flex", flexDirection: "initial" }}>
+      <div class="list" style={{display: "flex"}}>
+        
         <Button>
             <SwipeableTemporaryDrawer id="link1" />
           </Button>
-          <img id="logo" src="/logo.png" alt="logo" />
-          <h1 style={{ marginTop: "20px" }}>Bookold</h1>
-        </div>
-        <div class="btns" style={{display : "flex"}}>
-          <Button id="link1" href="/" size="large">
+          <div style = {{justifyContent: "center", alignItems: "center"}}>
+          <Grid container spacing={2} >
+           <Grid xs={4}>
+          <img style={{height:"80px"}} src="/logo.png" alt="logo" />
+           </Grid>
+           <Grid xs={8}>
+           <h1 >Bookold</h1>
+         </Grid>
+</Grid>
+</div>
+          
+        
+        <div className="btns">
+          <Button  href="/" size="large">
             <HomeIcon fontSize="medium" /> Home
           </Button>
-          <Button id="link1" href="/products" size="large">
+          <Button  href="/products" size="large">
             Products
           </Button>
-          <Button id="link1" href="/upload" size="large">
+          <Button  href="/upload" size="large">
             dashboard
           </Button>
 

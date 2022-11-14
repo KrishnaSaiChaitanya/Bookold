@@ -74,15 +74,15 @@
 }
 .e-img {
   margin-left: 10vw;
-  height: 30vh;
-  width: 20vw;
+  height: 34vh;
+  width: 18vw;
   align-items: center;
   
   margin-top: 10vh;
 }
 .e-img > img {
-  height: 40vh;
-  width: 25vw;
+  height: 34vh;
+  width: 18vw;
   /* margin-top: 15vh;
     margin-left: 18vw; */
 }

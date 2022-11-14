@@ -15,6 +15,7 @@ import Dashboard from './dashboard';
 import { useState } from 'react';
 import useSWR from 'swr'
 import ProductView from './ProductView';
+import ResponsiveAppBar from './Components/App_bar';
 function App() {
 //   function useSharedState() {
 //     const { data: state, mutate: setState } = useSWR(key, {
@@ -39,42 +40,42 @@ function App() {
       
 <Switch>
 <Route exact path = "/cart">
-        <Header/>
+        <ResponsiveAppBar/>
         <Cart />
         <Footer/>
         </Route>
         <Route exact path="/products">
-        <Header/>
+        <ResponsiveAppBar/>
        <Products  />
        <Footer/>
        </Route>
        <Route exact path="/dashboard">
-        <Header />
+       <ResponsiveAppBar/>
        <Dashboard/>
        <Footer/>
        </Route>
        <Route exact path = "/test">
-       <Header/>
+       <ResponsiveAppBar/>
         <Test/>
         </Route>
         <Route exact path = "/">
-        <Header/>
+        <ResponsiveAppBar/>
         <Home/>
         <Footer/>
         </Route>
         <Route exact path = "/upload">
-        <Header/>
+        <ResponsiveAppBar/>
           {/* <Form login = {a} setA = {setA}/> */}
           <Dashboard/>
           <Footer/>
         </Route>
         <Route exact path= "/about">
-        <Header/>
+        <ResponsiveAppBar/>
         <About/>
         <Footer/>
         </Route>
         <Route exact path= "/productView/:id">
-        <Header/>
+        <ResponsiveAppBar/>
         <ProductView/>
         <Footer/>
         </Route>

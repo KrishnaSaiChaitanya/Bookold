@@ -9,6 +9,7 @@ import Paper from '@mui/material/Paper';
 import Loading from './Loading_animation';
 import { useEffect, useState } from 'react';
 import { Grid } from '@mui/material';
+import { Zoom } from 'react-reveal';
 
 
 export default function SimpleBackdrop() {
@@ -28,7 +29,8 @@ export default function SimpleBackdrop() {
 
   return (
     <div>
-      <Button  onClick={handleOpen} fontSize="large" style={{colour : "#A52A5A"}}  ><ShoppingCartIcon/></Button>
+      <Button  onClick={handleOpen} fontSize="large" style={{color : "#a52a5a"}}  ><ShoppingCartIcon/></Button>
+      
       <Backdrop
         sx={{ color: 'black', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={open}
@@ -37,12 +39,12 @@ export default function SimpleBackdrop() {
         
           
   <div>
-  <div>
-  <Button onClick={handleClose}  style = {{ borderRadius: "50%", height: "70px", width: "70px", justifyItems: "end", colour : "#A52A5A"}}><CloseIcon fontSize="large"/></Button>
-  </div>
-  {!playAnimation && <div style={{height: "50vh",width: "80vw",borderRadius: "100px", backgroundColor : "white",   display: "flex", justifyContent: "center"}}>
+  
+  {!playAnimation && <Zoom duration={1500}> <div>
+  <Button onClick={handleClose}  style = {{ borderRadius: "50%", height: "70px", width: "70px", justifyItems: "end", color : "#A52A5A"}}><CloseIcon fontSize="large"/></Button>
+  </div><div style={{height: "50vh",width: "80vw",borderRadius: "100px", backgroundColor : "white",   display: "flex", justifyContent: "center"}}>
   <img src= "/emptyCart.png" style={{height : "300px" , width: "350px", marginTop: "30px"}} alt=""/>
-    </div>}
+    </div></Zoom>}
   </div>
   
   {playAnimation && <Loading/>}
@@ -56,6 +58,7 @@ export default function SimpleBackdrop() {
         </div> */}
         
       </Backdrop>
+      
     </div>
   );
 }

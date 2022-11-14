@@ -742,7 +742,7 @@ export default class Dashboard extends Component {
                 <h5>Name : {this.state.userName}</h5>
                 <h5>
                   Credits :{" "}
-                  <img src="https://img.icons8.com/material/24/000000/gg.png" />{" "}
+                  <img style = {{height: "35px"}}src= "./coin.png"></img>
                   {this.state.credits}{" "}
                 </h5>
                 <h5>Mobile-Number : {this.state.phone} </h5>

@@ -15,7 +15,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 export default function Carousel() {
   return (
     <>
-      <Swiper style={{height: "40vh"}}
+      <Swiper 
         cssMode={true}
         navigation={true}
         pagination={true}

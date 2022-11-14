@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./home.css";
 import wave from "./wave2.svg";
 import blob from "./blob.svg";
@@ -9,20 +9,25 @@ import Slide from "material-auto-rotating-carousel/lib/Slide";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Swiper from "swiper";
 import Carousel from "./Components/Slider";
-import { Zoom } from "react-reveal";
+import { Reveal, Zoom } from "react-reveal";
+import ScrollTop from "./Components/ScrollTop";
 const { red, blue, green } = require("@material-ui/core/colors");
 
 // style={{backgroundImage: "{wave}"}}
 
 const Home = () => {
+  let mainDiv = useRef();
   let [state, setState] = useState({ open: false });
   return (
-    <div className="main">
+    
+    <div className="main" ref={mainDiv}>
+      
       <div className="i"></div>
       <div className="info">
+      <ScrollTop parent={mainDiv} />
         <div class="second1">
           <p style={{ fontFamily: "Montserrat" }}>
-            <b>
+           
               <i>
                 <Zoom >
                 "It is a good rule after reading a new book, never to allow
@@ -30,7 +35,7 @@ const Home = () => {
                 between."
                 </Zoom>
               </i>
-            </b>
+            
           </p>
         </div>
         <h1> Learn more about our website </h1>
@@ -42,8 +47,8 @@ const Home = () => {
       </div>
 
       {/* carousel */}
-      <div style={{ position: "relative", width: "100%", backgroundColor: "antiquewhite" , alignItems: "center", paddingLeft: "45vw"}}>
-        <Button onClick={() => setState({ open: true })}>Learn More</Button>
+      <div className="learn_more_button" style={{  width: "100%", backgroundColor: "antiquewhite" , display:"flex"}}>
+        <Button onClick={() => setState({ open: true })} style= {{margin:"auto"}}>Learn More</Button>
         <AutoRotatingCarousel
           label="Get started"
           open={state.open}
@@ -83,37 +88,51 @@ const Home = () => {
           />
         </AutoRotatingCarousel>
       </div>
-
-      <div class="card-div">
-        <div class="card12">
-          <div class="card-body">
-            <img src="./s-1.png" alt="" />
+      
+      <div className="card-div" id = "Pomplet_card">
+        <div className="card12">
+       
+          <div className="card-body">
+          <Zoom effect="fadeInUp" duration = {1500}>
+            <img src="./s-1.png" alt="" /> </Zoom>
           </div>
+          
         </div>
-        <div class="card12">
-          <div class="card-body">
-            <img src="./s-2.png" alt="" />
+        <div className="card12">
+        
+          <div className="card-body">
+          <Zoom effect="fadeInUp" duration = {1500}>
+            <img src="./s-2.png" alt="" /> </Zoom>
           </div>
+          
         </div>
 
-        <div class="card12">
-          <div class="card-body">
+        <div className="card12">
+        
+          <div className="card-body">
+          <Zoom effect="fadeInUp" duration = {1500}>
             <img
               src="./s-3.png"
               alt=""
             />
+            </Zoom>
           </div>
+          
         </div>
-        <div class="card12" id="car">
-          <div class="card-body">
+        <div className="card12" id="car">
+        
+          <div className="card-body">
+          <Zoom effect="fadeInUp" duration = {1500} >
             <img src="./s-5.png" alt="" />
+            </Zoom>
           </div>
+          
         </div>
       </div>
 
       
 
-      <div className="carousel" style={{height : "30vh"}}>
+      <div className="carousel" >
         <Carousel/>
       </div>
       

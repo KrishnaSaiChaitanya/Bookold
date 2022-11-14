@@ -76,17 +76,17 @@
   margin-top: 3.3vh;
 }
 
-@media screen and (max-width: 600px) {
-  .link1 {
+@media screen and (max-width: 900px) {
+  .btns {
     display: none;
   }
   #p_name {
-    margin-left: 6vw;
+    
   }
   #logo {
     margin-left: 1rem;
-    height: 10px;
-    width: 50px;
+    height: 4rem;
+    width: 4rem;
   }
   .drawer {
     margin-top: 25px;

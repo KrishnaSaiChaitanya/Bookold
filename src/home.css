@@ -112,10 +112,33 @@
 .card-div{
     margin-bottom: 100px;
 }
+.carousel{
+    height: 30vh;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+    .i{
+        background-size:  100vw 15vh;
+        height: 15vh;
+    }
+    .second1 > p{
+        font-size: 14px;
+    }
+    .info > h1{
+        font-size: 20px;
+    }
     #car{
         display: none;
+    }
+    .carousel{
+        height: 20vh;
+    }
+    #Pomplet_card{
+        display: none;
+        margin-bottom: 10vh;
+    }
+    .learn_more_button{
+        margin-bottom: 10vh;
     }
     .card{
         height: 35vh;
@@ -123,5 +146,6 @@
     }
     .info{
         background-size: 100vw , 35vh;
+        height: fit-content;
     }
 }

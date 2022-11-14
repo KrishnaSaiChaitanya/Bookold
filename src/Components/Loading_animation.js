@@ -10,7 +10,7 @@ function Loading() {
       <div class="c3"></div>
       <div class="c4"></div>
     </div>
-    <span>loading</span>
+    {/* <span>loading</span> */}
   </div>
   )
 }
